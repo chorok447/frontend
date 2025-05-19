@@ -33,7 +33,7 @@ type ScheduleContextType = {
   nurses: Nurse[];
   setNurses: React.Dispatch<React.SetStateAction<Nurse[]>>;
   holidays: number[];
-  setHolidays: React.Dispatch<React.SetStateAction<number[]>>; // 추가
+  setHolidays: React.Dispatch<React.SetStateAction<number[]>>;
   generateSchedule: () => void;
 };
 
@@ -174,7 +174,7 @@ export const ScheduleProvider = ({ children }: { children: ReactNode }) => {
         nurses,
         setNurses,
         holidays,
-        setHolidays, // 추가
+        setHolidays,
         generateSchedule,
       }}
     >
